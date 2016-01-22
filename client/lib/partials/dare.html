@@ -1,0 +1,28 @@
+<!-- TODO: fix this shit its still todo not dare -->
+<div class="container" ng-controller="DareCtrl">
+    <div class="row col-md-12">
+        <div>
+            <input type="text" class="form-control input-lg" placeholder="Enter a Dare" ng-keypress="save($event)" ng-model="todoInput">
+        </div>
+    </div>
+    <div class="row col-md-12 dares">
+        <div class="alert alert-info text-center" ng-hide="dares.length > 0">
+            <h3>No Dares yet!</h3>
+        </div>
+        <div ng-repeat="dare in dares" class="dare col-md-12 col-sm-12 col-xs-12" ng-class="dare.isCompleted ? 'strike' : ''">
+            <div class="col-md-1 col-sm-1 col-xs-1">
+                <input type="checkbox" ng-checked="dare.isCompleted" ng-click="updateStatus($event, dare._id, $index)">
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8">
+                <span ng-show="!isEditable[$index]">{{dare.dare}}</span>
+                <input ng-show="isEditable[$index]" type="text" value="{{dare.dare}}" ng-keypress="edit($event,$index);">
+                <input ng-show="isEditable[$index]" type="button" class="btn btn-warning" value="Cancel" ng-click="isEditable[$index] = false" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <input type="button" class="btn btn-info" ng-disabled="dare.isCompleted" class="pull-right" value="Edit" ng-click="isEditable[$index] = true" />
+                <input type="button" class="btn btn-danger" class="pull-right" value="Delete" ng-click="delete($index)" />
+            </div>
+ 
+        </div>
+    </div>
+</div>
