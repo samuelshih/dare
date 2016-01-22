@@ -9,8 +9,12 @@ To install packages
 
 To run server, need to run have a mongodb server running as well:
 `mkdir -p /data/db/`
+`sudo chown -R <username> /data/db`
 `mongod`
 
 
 run server: 
 `gulp`
+
+
+Angular factory, responsible for interacting with the ExpressJS REST endpoints baby
