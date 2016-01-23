@@ -8,42 +8,42 @@
     text-decoration: line-through;
     color: #ccc;
 }
-.todos {
+.dares {
     padding: 20px;
 }
-.todo {
+.dare {
     padding: 10px;
     font-size: 21px;
     border-bottom: 1px solid;
 }
-.todo .btn {
+.dare .btn {
     margin-left: 5px;
     width: 72px;
 }
-.todo:hover {
+.dare:hover {
     background: #e7e7e7;
 }
 @media (max-width: 991px) {
-    .todo .btn {
+    .dare .btn {
         margin-bottom: 10px;
     }
-    .todo input[type=checkbox] {
+    .dare input[type=checkbox] {
         width: 25px;
         height: 25px;
     }
 }
 @media (max-width: 991px) {
-    .todo .btn-warning {
+    .dare .btn-warning {
         margin-top: 10px;
         margin-left: 0px
     }
 }
  
 @media (max-width: 450px) {
-    .todo .col-xs-8 {
+    .dare .col-xs-8 {
         width: 85%;
     }
-    .todo .col-xs-3 {
+    .dare .col-xs-3 {
         width: 100%;
         text-align: center;
         border-top: 1px dashed #aaa;

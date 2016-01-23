@@ -1,4 +1,4 @@
-dare = angular.module('dareApp', ['ngRoute'])
+dareApp = angular.module('dareApp', ['ngRoute'])
   .config(function($routeProvider) {
     $routeProvider
       .when('/', {
