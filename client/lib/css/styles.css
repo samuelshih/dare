@@ -157,30 +157,46 @@ a {
   height: 100px; }
 
 .signup .container {
-  margin: 0 auto;
+  /* make sure container only contains the two sects */
   padding-top: 20rem; }
-  .signup .container .signup_sect, .signup .container .login_sect {
-    height: 20rem;
-    width: 45rem;
-    border: 1px black solid;
-    position: relative; }
-  .signup .container .signup_sect {
-    border-right: 0px; }
-  .signup .container .title {
-    background-color: white;
-    padding: 2.5rem;
-    position: absolute;
-    font-size: 5rem; }
-  .signup .container .login_title {
-    bottom: -7rem;
-    right: -2rem; }
-  .signup .container .signup_title {
-    top: -9rem;
-    left: -2rem; }
-  .signup .container .correction {
-    display: inline-block; }
-  .signup .container .signup_form, .signup .container .login_form {
-    margin-top: 5rem;
-    margin-left: 10rem; }
+  .signup .container .contain_wrap {
+    width: 90rem;
+    margin: auto; }
+    .signup .container .contain_wrap .signup_sect, .signup .container .contain_wrap .login_sect {
+      height: 20rem;
+      width: 45rem;
+      border: 1px black solid;
+      position: relative; }
+    .signup .container .contain_wrap .signup_sect:hover, .signup .container .contain_wrap .login_sect:hover {
+      border-style: dotted; }
+    .signup .container .contain_wrap .signup_sect {
+      border-right: 0px;
+      /* & is original specificaiton */ }
+      .signup .container .contain_wrap .signup_sect:hover {
+        border-right: 1px black dotted; }
+        .signup .container .contain_wrap .signup_sect:hover + .login_sect {
+          border-left: 0px; }
+    .signup .container .contain_wrap .title {
+      background-color: white;
+      padding: 2.5rem;
+      position: absolute;
+      font-size: 5rem; }
+    .signup .container .contain_wrap .login_title {
+      bottom: -7rem;
+      right: -2rem; }
+    .signup .container .contain_wrap .signup_title {
+      top: -9rem;
+      left: -2rem; }
+    .signup .container .contain_wrap .correction {
+      display: inline-block; }
+    .signup .container .contain_wrap .signup_form, .signup .container .contain_wrap .login_form {
+      margin-top: 5rem;
+      margin-left: 10rem; }
+    .signup .container .contain_wrap .color_block {
+      z-index: -99;
+      position: absolute;
+      height: 20rem;
+      width: 45rem;
+      background-color: orange; }
 
 /*# sourceMappingURL=styles.css.map */
