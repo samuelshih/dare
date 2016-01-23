@@ -34,7 +34,7 @@ dareApp.controller('DareCtrl', function($rootScope, $scope, daresFactory) {
       if (data.data.updatedExisting) {
         _d.isCompleted = cbk;
       } else {
-        alert('Oops something went wrong!');
+        alert('Cannot update status!');
       }
     });
   };
@@ -52,7 +52,7 @@ dareApp.controller('DareCtrl', function($rootScope, $scope, daresFactory) {
           _d.dare = $event.target.value.trim();
           $scope.isEditable[i] = false;
         } else {
-          alert('Oops something went wrong!');
+          alert('Cant edit dare!');
         }
       });
     }
