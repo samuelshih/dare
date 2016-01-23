@@ -1,7 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin);
 * {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
-  border-radius: 0 !important; }
+  border-radius: 0 !important;
+  font-family: 'Cabin', sans-serif; }
 
 .strike span {
   text-decoration: line-through;
@@ -43,8 +45,116 @@
     border-top: 1px dashed #aaa;
     padding-top: 10px;
     margin-top: 10px; } }
+button {
+  background: transparent;
+  border: 1px solid #F05B5D;
+  color: #F05B5D; }
+  button:hover {
+    color: white;
+    background: #F05B5D;
+    -webkit-transition: .5s;
+    /* Safari */
+    transition: .5s; }
+
+a {
+  color: inherit; }
+  a:hover {
+    color: inherit;
+    cursor: pointer; }
+
 .homepage .nav {
-  list-style: none; }
+  border-bottom: 1px #BDB4A2 solid; }
+  .homepage .nav ul {
+    list-style: none;
+    float: right;
+    margin-bottom: 0px; }
+    .homepage .nav ul li {
+      color: #F05B5D;
+      display: inline-block;
+      padding: 1rem;
+      line-height: 50px;
+      text-transform: uppercase;
+      font-size: 12px; }
+      .homepage .nav ul li:hover {
+        color: #FF3D28; }
+.homepage .main {
+  text-align: center; }
+  .homepage .main .logo {
+    background: url("/lib/images/logo.png");
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .homepage .main .signup-btn {
+    padding: 1.5rem 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem; }
+  .homepage .main .blurb {
+    position: relative;
+    background: linear-gradient(-90deg, #BDB4A2, #F05B5D);
+    color: white;
+    margin-top: 80px;
+    z-index: 1; }
+    .homepage .main .blurb:before, .homepage .main .blurb:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    .homepage .main .blurb:before {
+      top: 0;
+      transform: skewY(2.5deg);
+      transform-origin: 100% 0; }
+    .homepage .main .blurb:after {
+      bottom: 0;
+      transform: skewY(2.5deg);
+      transform-origin: 0 100%; }
+    .homepage .main .blurb p {
+      margin: 100px 0px; }
+.homepage .feed {
+  height: 400px; }
+.homepage .social-media {
+  background: linear-gradient(90deg, #BDB4A2, #F05B5D);
+  height: 200px;
+  position: relative; }
+  .homepage .social-media:before, .homepage .social-media:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .homepage .social-media:before {
+    top: 0;
+    transform: skewY(-2.5deg);
+    transform-origin: 0 100%; }
+  .homepage .social-media:after {
+    bottom: 0;
+    transform: skewY(-2.5deg);
+    transform-origin: 100% 0; }
+  .homepage .social-media .container {
+    padding: 50px; }
+    .homepage .social-media .container .icon {
+      display: inline-block;
+      margin: 3.5rem; }
+    .homepage .social-media .container .facebook {
+      background: url("/lib/images/fb.png");
+      background-size: contain;
+      height: 30px;
+      width: 30px; }
+    .homepage .social-media .container .twitter {
+      background: url("/lib/images/twitter.png");
+      background-size: contain;
+      height: 30px;
+      width: 30px; }
+.homepage .footer {
+  height: 100px; }
 
 .signup .container {
   margin: 0 auto;
