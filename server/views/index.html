@@ -6,12 +6,18 @@
   <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/lib/css/styles.css">
 
+  <!-- Including jquery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <!--<script type="text/javascript" src="js/script.js"></script>-->
+
   <script type="text/javascript" src="/lib/angular/angular.min.js"></script>
-	<script type="text/javascript" src="/lib/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="/lib/angular-route/angular-route.min.js"></script>
   <!-- LINKS THE FUCKING FACTORIES AND CONTROLLERS -->
   <script type="text/javascript" src="lib/js/app.js"></script>
   <script type="text/javascript" src="lib/js/factory.js"></script>
   <script type="text/javascript" src="lib/js/controllers.js"></script>
+  <script type="text/javascript" src="lib/js/video.js"></script>
+
 </head>
 
 <body>
@@ -42,7 +48,9 @@
         </div>
       </div>
       <div class="feed">
-
+        <div class="videos">
+          <div id="player"></div>
+        </div>
       </div>
       <div class="social-media">
         <div class="container">

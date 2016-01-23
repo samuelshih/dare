@@ -115,7 +115,10 @@ a {
     .homepage .main .blurb p {
       margin: 100px 0px; }
 .homepage .feed {
-  height: 400px; }
+  height: 400px;
+  padding: 5rem; }
+  .homepage .feed .videos {
+    padding: 3rem; }
 .homepage .social-media {
   background: linear-gradient(90deg, #BDB4A2, #F05B5D);
   height: 200px;

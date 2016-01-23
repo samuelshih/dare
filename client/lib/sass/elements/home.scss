@@ -68,6 +68,10 @@
 	}
 	.feed{
 		height: 400px;
+		padding: 5rem;
+		.videos{
+			padding: 3rem;
+		}
 	}
 	.social-media{
 		background: linear-gradient(90deg, $grey, $red);
