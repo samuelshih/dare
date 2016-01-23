@@ -166,7 +166,8 @@ a {
       height: 20rem;
       width: 45rem;
       border: 1px black solid;
-      position: relative; }
+      position: relative;
+      background-color: white; }
     .signup .container .contain_wrap .signup_sect:hover, .signup .container .contain_wrap .login_sect:hover {
       border-style: dotted; }
     .signup .container .contain_wrap .signup_sect {
@@ -176,6 +177,12 @@ a {
         border-right: 1px black dotted; }
         .signup .container .contain_wrap .signup_sect:hover + .login_sect {
           border-left: 0px; }
+        .signup .container .contain_wrap .signup_sect:hover .orange1 {
+          transition: 1s;
+          left: -3rem; }
+    .signup .container .contain_wrap .login_sect:hover .orange2 {
+      transition: 1s;
+      right: -3rem; }
     .signup .container .contain_wrap .title {
       background-color: white;
       padding: 2.5rem;
@@ -197,6 +204,16 @@ a {
       position: absolute;
       height: 20rem;
       width: 45rem;
-      background-color: orange; }
+      background-color: red; }
+    .signup .container .contain_wrap .orange1 {
+      transition: 1sec;
+      transform: skewX(5deg);
+      bottom: -4rem;
+      left: -100rem; }
+    .signup .container .contain_wrap .orange2 {
+      transition: 1sec;
+      transform: skewx(-5deg);
+      right: -100rem;
+      top: -5rem; }
 
 /*# sourceMappingURL=styles.css.map */

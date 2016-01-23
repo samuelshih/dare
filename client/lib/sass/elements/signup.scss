@@ -1,3 +1,9 @@
+$grey: #BDB4A2;
+$lightest: #F2D2C1;
+$light: #F48380;
+$red: #F05B5D;
+$bright: #FF3D28;
+
 .signup {
 
     .container {
@@ -12,6 +18,7 @@
                 width: 45rem;
                 border: 1px black solid;
                 position: relative;
+                background-color: white;
             }
             .signup_sect:hover, .login_sect:hover {
                 border-style: dotted;
@@ -24,8 +31,20 @@
                     & + .login_sect {
                         border-left: 0px;
                     }
+                    .orange1 {
+                        transition: 1s;
+                        left: -3rem;
+                    }
                 }
             }
+
+            .login_sect:hover {
+                .orange2 {
+                    transition: 1s;
+                    right: -3rem;
+                }
+            }
+
             .title {
                 background-color: white;
                 padding: 2.5rem;
@@ -53,9 +72,20 @@
                 position: absolute;
                 height: 20rem;
                 width: 45rem;
-                background-color: orange;
+                background-color: red;
             }
-
+            .orange1 {
+                transition: 1sec;
+                transform: skewX(5deg);
+                bottom: -4rem;
+                left: -100rem;
+            }
+            .orange2 {
+                transition: 1sec;
+                transform: skewx(-5deg);
+                right: -100rem;
+                top: -5rem;
+            }
             
         }
     }
