@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="dareApp">
+
+<head>
+  <title>Dare</title>
+  <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+
+  <script type="text/javascript" src="/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="/lib/angular-route/angular-route.min.js"></script>
+  <!-- LINKS THE FUCKING FACTORIES AND CONTROLLERS -->
+  <script type="text/javascript" src="lib/js/app.js"></script>
+  <script type="text/javascript" src="lib/js/factory.js"></script>
+  <script type="text/javascript" src="lib/js/controllers.js"></script>
+</head>
+
+<h1>Login...</h1>
+
+<form action="/login" method="post">
+    <div>
+        <label>Username:</label>
+        <input type="text" name="username"/>
+    </div>
+    <div>
+        <label>Password:</label>
+        <input type="password" name="password"/>
+    </div>
+    <div>
+        <input type="submit" value="Log In"/>
+    </div>
+</form>
+
+</html>
