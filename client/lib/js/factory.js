@@ -14,7 +14,7 @@ dareApp.factory('daresFactory', function($http) {
     return $http.put(urlBase, dare);
   };
  
-  _todoService.deleteTodo = function(id) {
+  _dareService.deleteDare = function(id) {
     return $http.delete(urlBase + '/' + id);
   };
  
