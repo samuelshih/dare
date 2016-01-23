@@ -46,4 +46,31 @@
 .homepage .nav {
   list-style: none; }
 
+.signup .container {
+  margin: 0 auto;
+  padding-top: 20rem; }
+  .signup .container .signup_sect, .signup .container .login_sect {
+    height: 20rem;
+    width: 45rem;
+    border: 1px black solid;
+    position: relative; }
+  .signup .container .signup_sect {
+    border-right: 0px; }
+  .signup .container .title {
+    background-color: white;
+    padding: 2.5rem;
+    position: absolute;
+    font-size: 5rem; }
+  .signup .container .login_title {
+    bottom: -7rem;
+    right: -2rem; }
+  .signup .container .signup_title {
+    top: -9rem;
+    left: -2rem; }
+  .signup .container .correction {
+    display: inline-block; }
+  .signup .container .signup_form, .signup .container .login_form {
+    margin-top: 5rem;
+    margin-left: 10rem; }
+
 /*# sourceMappingURL=styles.css.map */
