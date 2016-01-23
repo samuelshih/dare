@@ -1,0 +1,62 @@
+.signup {
+
+    .container {
+        /* make sure container only contains the two sects */
+        padding-top: 20rem;
+        .contain_wrap {
+            width: 90rem;
+            margin: auto;
+        
+            .signup_sect, .login_sect {
+                height: 20rem;
+                width: 45rem;
+                border: 1px black solid;
+                position: relative;
+            }
+            .signup_sect:hover, .login_sect:hover {
+                border-style: dotted;
+            }
+            .signup_sect {
+                border-right: 0px;
+                /* & is original specificaiton */
+                &:hover {
+                    border-right: 1px black dotted;
+                    & + .login_sect {
+                        border-left: 0px;
+                    }
+                }
+            }
+            .title {
+                background-color: white;
+                padding: 2.5rem;
+                position: absolute;
+                font-size: 5rem;
+            }
+            .login_title {
+                bottom: -7rem;
+                right: -2rem;
+            }
+            .signup_title {
+                top: -9rem;
+                left: -2rem;
+            }
+            .correction {
+                display: inline-block;
+            }
+            .signup_form, .login_form {
+                margin-top: 5rem;
+                margin-left: 10rem;
+            }
+
+            .color_block{
+                z-index: -99;
+                position: absolute;
+                height: 20rem;
+                width: 45rem;
+                background-color: orange;
+            }
+
+            
+        }
+    }
+}

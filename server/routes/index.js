@@ -10,6 +10,10 @@
   router.get('/', function(req, res) {
     res.render('index');
   });
+
+  router.get('/signup', function(req,res){
+    res.render('signup');
+  });
  
   router.get('/api/dares', function(req, res) {
     db.dares.find(function(err, data) {
