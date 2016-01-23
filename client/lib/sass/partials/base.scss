@@ -1,0 +1,19 @@
+$grey: #BDB4A2;
+$lightest: #F2D2C1;
+$light: #F48380;
+$red: #F05B5D;
+$bright: #FF3D28;
+
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+button{
+	background: transparent;
+	border: 1px solid $red;
+	color: $red;
+	&:hover{
+		color: white;
+		background: $red;
+		-webkit-transition: .5s; /* Safari */
+    	transition: .5s;
+	}
+}
