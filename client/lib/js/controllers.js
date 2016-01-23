@@ -1,17 +1,17 @@
 dareApp.controller('DareCtrl', function($rootScope, $scope, daresFactory) {
- 
+
   $scope.dares = [];
   $scope.isEditable = [];
- 
+
   // get all Dares on Load
   daresFactory.getDares().then(function(data) {
     $scope.dares = data.data;
   });
- 
+
   // Save a Dare to the server
   $scope.save = function($event) {
     if ($event.which == 13 && $scope.dareInput) {
- 
+
       daresFactory.saveDare({
         "dare": $scope.dareInput,
         "isCompleted": false
@@ -21,7 +21,7 @@ dareApp.controller('DareCtrl', function($rootScope, $scope, daresFactory) {
       $scope.dareInput = '';
     }
   };
- 
+
   //update the status of the Dare
   $scope.updateStatus = function($event, _id, i) {
     var cbk = $event.target.checked;
@@ -38,7 +38,7 @@ dareApp.controller('DareCtrl', function($rootScope, $scope, daresFactory) {
       }
     });
   };
- 
+
   // Update the edited Dare
   $scope.edit = function($event, i) {
     if ($event.which == 13 && $event.target.value.trim()) {
@@ -57,14 +57,14 @@ dareApp.controller('DareCtrl', function($rootScope, $scope, daresFactory) {
       });
     }
   };
- 
+
   // Delete a Dare
   $scope.delete = function(i) {
-    datasFactory.deleteDare($scope.dares[i]._id).then(function(data) {
+    daresFactory.deleteDare($scope.dares[i]._id).then(function(data) {
       if (data.data) {
         $scope.dares.splice(i, 1);
       }
     });
   };
- 
+
 });
