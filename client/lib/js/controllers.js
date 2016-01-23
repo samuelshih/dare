@@ -1,4 +1,4 @@
-dareApp.controller('dareCtrl', function($rootScope, $scope, daresFactory) {
+dareApp.controller('DareCtrl', function($rootScope, $scope, daresFactory) {
  
   $scope.dares = [];
   $scope.isEditable = [];
